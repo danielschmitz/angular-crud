@@ -1,17 +1,14 @@
 {
   "name": "angular-crud",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test --watch=false --browsers=ChromeHeadlessCustom",
-    "test:watch": "ng test",
-    "rimraf": "./node_modules/rimraf/bin.js",
+    "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "clean": "rimraf ./dist",
-    "build:ci": "npm run clean && npm run test && npm run build:prod"
+    "build:ci": "npm run test && npm run build:prod"
   },
   "private": true,
   "dependencies": {
@@ -30,7 +27,6 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
     "@angular-devkit/build-angular": "~0.900.4",
     "@angular/cli": "~9.0.4",
     "@angular/compiler-cli": "~9.0.3",
@@ -47,7 +43,6 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "~5.4.3",
-    "puppeteer": "^2.1.1",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
